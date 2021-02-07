@@ -29,15 +29,16 @@ class SplashScreenVC: UIViewController {
   func configure(){
     view.backgroundColor = Colors.mainColor
     view.addSubview(imageLogo)
-    imageLogo.image = UIImage(named: "logo")
+    imageLogo.image = UIImage(systemName: "swift")
     imageLogo.contentMode = .scaleAspectFit
+    imageLogo.tintColor = .label
     
     imageLogo.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
       imageLogo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       imageLogo.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-      imageLogo.widthAnchor.constraint(equalToConstant: 266),
-      imageLogo.heightAnchor.constraint(equalToConstant: 217)
+      imageLogo.widthAnchor.constraint(equalToConstant: 200),
+      imageLogo.heightAnchor.constraint(equalToConstant: 168)
     ])
   }
   
