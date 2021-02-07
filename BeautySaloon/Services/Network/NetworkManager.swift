@@ -16,7 +16,7 @@ class NetworkManager {
   
   // MARK: - Private properties
   
-  private let baseUrl = "http://192.168.1.18/BeautyShop/hs/beauty_master"
+  private let baseUrl = "http://192.168.1.18/BeautySaloon/hs/beauty_master"
   
   private let cache = NSCache<NSString, UIImage>()
   

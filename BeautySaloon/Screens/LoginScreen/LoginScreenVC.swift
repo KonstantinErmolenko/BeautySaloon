@@ -25,7 +25,9 @@ class LoginScreenVC: UIViewController {
     super.viewDidLoad()
     
     view.backgroundColor = Colors.mainColor
-    logoImage = UIImageView(image: UIImage(named: "logo"))
+    logoImage = UIImageView(image: UIImage(systemName: "swift"))
+    logoImage.tintColor = .label
+
     layoutUI()
     configure()
     createTapGestureRecognizer()    
